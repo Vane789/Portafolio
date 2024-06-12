@@ -1,0 +1,80 @@
+
+
+/** Button descargar CV**/
+
+#effect{
+    padding: 0.75rem 2rem;
+    background-color: var(--colorPrimary);
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#effect::after{
+    content: "";
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 30px;
+    background-image: var(--gradientTertiary);
+    z-index: -1;
+}
+
+#effect:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px var(--colorSecondary),
+    -40px 0 100px var(--colorSecondary);
+}
+
+#btn-download{
+    position: relative;
+    background: #000;
+    opacity: 1;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border-image: var(--gradientPrimary);
+}
+
+#btn-download::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50px;
+    background-image: var(--gradientPrimary);
+    z-index: -1;
+}
+
+#btn-download i{
+    margin-left: 0.5rem;
+}
+
+#btn-download:hover {
+    box-shadow: 40px 0 100px var(--colorSecondary),
+    -40px 0 100px var(--colorSecondary);
+    cursor: pointer;
+}
+
+.btn-enviar{
+    background-color: var(--colorPrimary);
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    font-weight: 700;
+    background-image: var(--gradientTertiary);
+}
