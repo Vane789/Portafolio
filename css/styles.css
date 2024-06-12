@@ -163,8 +163,8 @@
 }
 
 .list-btn-proyecto button:hover{
-    transition-duration: .15s;
-    border: none;
+    transition-duration: .5s;
+    border: 2px solid transparent;
 }
 
 /** Seccion habilidades**/
